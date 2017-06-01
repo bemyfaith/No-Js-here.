@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0">
+	<title></title>
+	<style>
+			* {
+			margin:0;
+			padding:0;
+			border:0;
+		}
+
+		.taiji {
+			z-index:0;
+			width:300px;
+			height:150px;
+			margin:100px auto;
+			border:1px solid;
+			border-top:150px solid black;
+			transform:rotate(90deg);
+			border-radius:150px;
+			position:relative;
+		}	
+		.taiji:before
+		{
+			content:"";
+			z-index:1;
+			width:40px;
+			height:40px;
+			background:black;
+			border-right:55px solid white;
+			border-left:55px solid white;
+			border-top:55px solid white;
+			border-bottom:55px solid white;
+			border-radius:75px;
+			position:absolute;
+			top:-75px;
+			left:0;
+		}	
+		.taiji:after
+		{
+			z-index:2;
+			content:"";
+			width:40px;
+			height:40px;
+			background:white;
+			border:55px solid;
+			border-radius:75px;
+			position:absolute;
+			top:-75px;
+			left:150px;
+		}		
+	</style>
+</head>
+<body>	
+<div class="taiji">
+	
+</div>
+
+</body>	
+</html>
